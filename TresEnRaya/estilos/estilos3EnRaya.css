@@ -1,0 +1,60 @@
+body{
+    background-image: url(../imagenes/Fondo\ de\ Pantalla\ Cósmico\ Cromado\ Neón\ Morado\ Negro\ y\ Cian.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    font-family: "Luckiest Guy", cursive;
+}
+*{
+    color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    top: 5vw;
+    left: 30vw;
+}
+p{
+    text-align: center;
+    position: relative;
+    top: 4vw;
+    left: 30vw;
+    color: darkblue;
+}
+.div-central{
+    position: relative;
+    text-align: center;
+    top: 10vw;
+    left: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(139, 0, 139, 0.6);
+    padding: 5vw;
+}
+.div-radio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+input{
+    width: 2vw;
+    height: 1.5vw;
+}
+hr{
+    width: 90%;
+    border-color: darkmagenta;
+}
+button{
+    font-family: "Luckiest Guy", cursive;
+    color: darkmagenta;
+    font-size: 1.5vw;
+    background-color: rgb(229, 164, 229);
+    height: 4vw;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(158, 120, 25);
+    background-color: rgb(255, 220, 131);
+}

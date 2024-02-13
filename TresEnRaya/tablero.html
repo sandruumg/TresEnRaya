@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/estilosTablero.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titulo">
+         <span id="modo"></span> //
+         <span id="tipo"></span>
+    </div>
+    <br><br>
+    <div class="div-total">
+        <div class="div-tablero">
+            <table class="tablero" onclick="jugar(event)">
+                <tr>
+                    <td class="casilla" data-indice="0"></td>
+                    <td class="casilla" data-indice="1"></td>
+                    <td class="casilla" data-indice="2"></td>
+                </tr>
+                <tr>
+                    <td class="casilla" data-indice="3"></td>
+                    <td class="casilla" data-indice="4"></td>
+                    <td class="casilla" data-indice="5"></td>
+                </tr>
+                <tr>
+                    <td class="casilla" data-indice="6"></td>
+                    <td class="casilla" data-indice="7"></td>
+                    <td class="casilla" data-indice="8"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div-tiempo">
+            <table>
+                <tr>
+                    <td>Tiempo de juego: <div id="contador"></div></td>
+                </tr>
+                <tr>
+                    <td>Tiempo restante de jugada: <div id="contadorJugada"></div></td>
+                </tr>
+            </table>
+            <div>
+                <button id="revancha" onclick="revancha()"> Revancha</button>
+                <button id="empezar" onclick="empezarOtraVez()"> Empezar de nuevo</button>
+            </div>
+        </div>
+    </div>
+    <!-- nuevo -->
+    <div class="contenedor-ganador">
+        <div id="ganador"> 
+        </div>
+    </div>
+    <!-- nuevo -->
+    <br><br>
+    <div id="historico" hidden>
+        <table>
+            <tr>
+                <td colspan="3">
+                    Jugador 1
+                </td>
+                <td colspan="3" id="otroJugador">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Ganadas</td>
+                <td>Empatadas</td>
+                <td>Perdidas</td>
+                <td>Ganadas</td>
+                <td>Empatadas</td>
+                <td>Perdidas</td>
+            </tr>
+            <tr>
+                <td id="nVictoriasJ"></td>
+                <td id="nEmpatesJ"></td>
+                <td id="nDerrotasJ"></td>
+                <td id="nVictoriasOtro"></td>
+                <td id="nEmpatesOtro"></td>
+                <td id="nDerrotasOtro"></td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <script src="tablero.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos3EnRaya.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juega al 3 en raya</h1>
+    <p>Para comenzar una partida seleccione un modo y un tipo de juego</p>
+    <div class="div-central">
+        <div class="div-radio">
+            <input type="radio" name="tipoJuego" value="1vsCPU">1 vs aleatorio</input>
+            <input type="radio" name="tipoJuego" value="1vsIA">1 vs IA</input>
+            <input type="radio" name="tipoJuego" value="1vs2">2 jugadores</input>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="div-radio">
+            <input type="radio" name="modoJuego" value="9">9 fichas</input>
+            <input type="radio" name="modoJuego" value="6">6 fichas</input>
+        </div>
+        <br>
+        <button onclick="empezarJuego()">Empezar juego</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
